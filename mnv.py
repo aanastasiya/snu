@@ -20,9 +20,9 @@ def calculate_distance(distance, speed):
 # База знаний
 def calculate_brake_e(distance, speed):
     return [
-        [0.0, 70.0 * speed + 12.0 * distance, 80.0 * speed + 120.0 * distance],
-        [12.0 * speed + 20.0 * distance, 30.0 * speed + 16.0 * distance, 10.0 * speed + 70.0 * distance],
-        [0.0, 12.0 * speed + 10.0 * distance, 34.0 * speed + 120.0 * distance]
+        [0.0, 10.0 * speed + 25.0 * distance, 45.0 * speed + 80.0 * distance],
+        [20.0 * speed + 2.0 * distance, 40.0 * speed + 16.0 * distance, 15.0 * speed + 50.0 * distance],
+        [0.0, 15.0 * speed + 11.0 * distance, 22.0 * speed + 28.0 * distance]
     ]
 
 
@@ -68,8 +68,8 @@ def controller(speed, distance):
 
 
 if __name__ == "__main__":
-    speed = 11.0
-    distance = 200.0
+    speed = 14.0
+    distance = 300.0
 
     new_speed = speed
     new_distance = distance - speed * 1
